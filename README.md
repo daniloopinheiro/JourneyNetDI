@@ -1,51 +1,4 @@
-<!--
-# Nome do Projeto
-
-Breve descrição do projeto aqui.
-
-## Índice
-
-1. [Instalação](#instalação)
-2. [Como Usar](#como-usar)
-3. [Contribuições](#contribuições)
-4. [Licença](#licença)
-
-## Instalação
-
-Forneça instruções sobre como instalar o seu projeto. Você pode incluir requisitos de sistema, dependências e os passos necessários para instalar o software.
-
-Exemplo:
-
-```
-$ git clone https://github.com/seu-usuario/nome-do-projeto.git
-$ cd nome-do-projeto
-$ npm install
-```
-
-## Como Usar
-
-Explique como usar o seu projeto. Forneça exemplos de código e descrições claras para demonstrar como ele pode ser utilizado.
-
-Exemplo:
-
-```javascript
-const exemplo = require('nome-do-projeto');
-
-// Utilize a função exemplo desta forma:
-exemplo.funcaoExemplo('argumento');
-```
-
-## Contribuições
-
-Explique se você está aberto para contribuições e como outros desenvolvedores podem fazê-las. Inclua orientações para quem deseja reportar bugs, enviar solicitações de novos recursos ou fazer alterações no código.
-
--->
-
-# Nome do Projeto
-
-Breve descrição do projeto aqui.
-
-Inclua uma ou duas frases descrevendo o propósito e o objetivo do seu software.
+# Injeção de dependências
 
 ## Índice
 
@@ -59,19 +12,64 @@ Inclua uma ou duas frases descrevendo o propósito e o objetivo do seu software.
 
 ## Visão Geral
 
-Breve explicação sobre o que é o seu software e por que ele é útil. Inclua talvez uma visão geral de seus recursos principais ou funcionalidades distintas.
+Explorando as opções *Transient, Scoped e Singleton*. Como evitar dependências fortes entre classes, utilizando injeção de dependência para manter o código modular e limpo. Importância de separar a criação de instâncias de classes, evitando acoplamentos desnecessários. Exploraremos a utilização de um serviço de injeção de dependência como um oráculo para gerenciar as dependências entre classes.
 
 ## Instalação
 
-Forneça instruções claras sobre como instalar o seu software. Inclua pré-requisitos, como dependências de software ou bibliotecas necessárias. Forneça os comandos específicos que o usuário precisa executar para instalar o software.
+### Windows
 
-Exemplo:
+#### .NET Framework
 
-```
-$ git clone https://github.com/seu-usuario/nome-do-projeto.git
-$ cd nome-do-projeto
-$ npm install
-```
+1. **Verificar a versão do Windows:**
+   - Abra o "Painel de Controle" e vá para "Programas" > "Programas e Recursos". Lá você pode ver se o .NET Framework já está instalado e qual versão.
+
+2. **Instalação:**
+   - Para instalar o .NET Framework, baixe o instalador adequado para a versão do Windows no site da Microsoft (geralmente pode ser encontrado como um componente opcional no Windows Update).
+
+#### .NET Core / .NET 5.0 e posteriores
+
+1. **Baixar o instalador:**
+   - Acesse o site [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) e baixe o instalador do .NET Core ou .NET 5.0 (ou versão posterior).
+
+2. **Executar o instalador:**
+   - Execute o arquivo baixado e siga as instruções na tela para completar a instalação.
+
+### macOS
+
+#### .NET Core / .NET 5.0 e posteriores
+
+1. **Baixar o instalador:**
+   - Acesse o site [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) e baixe o instalador do .NET Core ou .NET 5.0 (ou versão posterior) para macOS.
+
+2. **Executar o instalador:**
+   - Abra o arquivo baixado (.pkg) e siga as instruções na tela para completar a instalação.
+
+### Linux
+
+#### .NET Core / .NET 5.0 e posteriores
+
+1. **Adicionar o repositório do .NET:**
+   - Siga as instruções específicas para sua distribuição Linux no site da Microsoft [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
+
+2. **Instalar o .NET:**
+   - Use os comandos apropriados para sua distribuição Linux para instalar o .NET Core ou .NET 5.0 e posteriores. Por exemplo, para Ubuntu:
+     ```bash
+     sudo apt-get update
+     sudo apt-get install dotnet-sdk-5.0
+     ```
+
+3. **Verificar a instalação:**
+   - Após a instalação, você pode verificar se o .NET foi instalado corretamente usando o comando:
+     ```bash
+     dotnet --version
+     ```
+
+### Observações gerais
+
+- **Atualizações:** É recomendável manter o .NET atualizado para receber correções de segurança e novos recursos.
+- **Documentação:** Para instruções detalhadas e específicas para diferentes versões e cenários, consulte a documentação oficial da Microsoft em [docs.microsoft.com/dotnet](https://docs.microsoft.com/dotnet).
+
+Seguindo esses passos, você conseguirá instalar o .NET em diferentes sistemas operacionais de forma adequada.
 
 ## Como Usar
 
