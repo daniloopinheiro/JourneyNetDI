@@ -1,3 +1,4 @@
+namespace DependencyInjection.API.Endpoints.Singleton;
 public static class SingletonEndpoint
 {
     public static void GetSingletonEndpoint(this WebApplication app)
