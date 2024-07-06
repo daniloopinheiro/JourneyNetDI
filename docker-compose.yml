@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dependencyinjection.api:
+    image: ${DOCKER_REGISTRY-}dependencyinjectionapi
+    build:
+      context: .
+      dockerfile: src/DependencyInjection.API/Dockerfile
