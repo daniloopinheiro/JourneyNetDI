@@ -4,7 +4,7 @@
 
 1. [Visão Geral](#visão-geral)
 2. [Instalação](#instalação)
-3. [Como Usar](#como-usar)
+3. [Como Usar](#Como-executar-o-projeto)
 4. [Configuração](#configuração)
 5. [Contribuições](#contribuições)
 6. [Licença](#licença)
@@ -71,33 +71,36 @@ Explorando as opções *Transient, Scoped e Singleton*. Como evitar dependência
 
 Seguindo esses passos, você conseguirá instalar o .NET em diferentes sistemas operacionais de forma adequada.
 
-## Como Usar
+## Como executar o projeto
 
-Explique como usar o seu software em detalhes. Forneça exemplos de código, comandos de linha ou capturas de tela para demonstrar o uso típico do software. Isso pode incluir configurações específicas, parâmetros de linha de comando, ou qualquer outra informação relevante para o usuário.
+- Utilizando VS, selecione em qual modo pretende executar o projeto:
 
-Exemplo:
+![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/226e1912-bc53-4a7e-bb65-1f30dc937502)
+![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/299c559f-569a-464a-96fb-f14880e6e49c)
 
-```bash
-$ npm start
-```
+- Obsesrvação que ficará de sua escolha; deixe uma das duas opções selecionada.
 
-Isso iniciará o servidor de desenvolvimento.
+![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/5ecbc3b0-e9af-4f3c-a64a-51d1c57b0cce)
 
 ## Configuração
 
-Se o seu software requer configuração adicional além da instalação padrão, explique aqui como configurá-lo. Isso pode incluir variáveis de ambiente, arquivos de configuração ou qualquer ajuste necessário para personalizar o comportamento do software.
+Conforme o projeot está, não há nenhuma necessidade de configurar; apenas verificar a versão do sdk que esta instalado em sua maquina.
 
 ## Contribuições
 
-Explique se você está aberto para contribuições e como outros desenvolvedores podem ajudar. Inclua orientações para quem deseja reportar bugs, enviar solicitações de novos recursos ou fazer alterações no código.
+1. **Testar e Reportar Problemas**: Se encontrar algum problema ou bug, por favor, abra uma nova issue descrevendo-o detalhadamente.
+
+2. **Sugerir Melhorias**: Se tiver ideias para melhorar o projeto, sinta-se à vontade para abrir uma issue propondo suas sugestões.
+
+3. **Enviar Pull Requests**: Se você é desenvolvedor e gostaria de contribuir com código, ficarei muito feliz em receber suas contribuições. Basta fazer um fork do repositório, implementar suas mudanças e enviar um pull request.
+
+4. **Ajudar com Documentação**: Contribuições para a documentação também são muito bem-vindas! Se você encontrar partes da documentação que podem ser melhoradas ou novos recursos que precisam de documentação, fique à vontade para contribuir.
+
+5. **Espalhar a Palavra**: Compartilhar este projeto com outras pessoas que possam se interessar ou se beneficiar dele também é uma grande forma de contribuição.
 
 ## Contato
 
-Forneça informações para contato, como email ou links para redes sociais, caso os usuários tenham dúvidas ou queiram se comunicar com os desenvolvedores do projeto.
-
----
-
-Adapte este modelo conforme necessário para o seu projeto específico, adicionando ou removendo seções conforme apropriado. Um bom README é essencial para orientar os usuários e colaboradores sobre o uso e desenvolvimento do seu software.
+https://github.com/daniloopinheiro
 
 ## Licença
 
