@@ -1,3 +1,4 @@
+namespace DependencyInjection.API.Endpoints.Transient;
 public static class TransientEndpoint
 {
     public static void GetTransientEndpoint(this WebApplication app)

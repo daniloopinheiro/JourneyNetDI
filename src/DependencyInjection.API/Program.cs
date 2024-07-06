@@ -1,3 +1,6 @@
+using DependencyInjection.API.Endpoints.Scoped;
+using DependencyInjection.API.Endpoints.Transient;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

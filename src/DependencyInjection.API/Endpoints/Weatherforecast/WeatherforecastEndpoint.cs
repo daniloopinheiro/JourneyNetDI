@@ -1,15 +1,17 @@
+namespace DependencyInjection.API.Endpoints.Weatherforecast;
+
 public static class WeatherforecastEndpoint
 {
     public static void GetWeatherForecastEndpoint(this WebApplication app)
     {
         var summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-        
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
+
         app.MapGet("api/weatherforecast", () =>
         {
-            var forecast =  Enumerable.Range(1, 5).Select(index =>
+            var forecast = Enumerable.Range(1, 5).Select(index =>
                 new WeatherForecast
                 (
                     DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
