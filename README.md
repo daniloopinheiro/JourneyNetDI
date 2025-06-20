@@ -1,4 +1,4 @@
-# 🧩 Injeção de Dependências em C# com .NET
+# 🚀 JourneyNetDI – Injeção de Dependência com C# e .NET
 
 > Projeto baseado na trilha oficial da Rocketseat  
 > 🔗 [Referência: Banco de dados e Injeção de Dependência – C#](https://app.rocketseat.com.br/classroom/banco-de-dados-e-injecao-de-dependencia)
