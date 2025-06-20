@@ -1,5 +1,7 @@
 # 🚀 JourneyNetDI – Injeção de Dependência com C# e .NET
 
+[![.NET](https://github.com/daniloopinheiro/JourneyNetDI/actions/workflows/dotnet.yml/badge.svg)](https://github.com/daniloopinheiro/JourneyNetDI/actions/workflows/dotnet.yml)
+
 > Projeto baseado na trilha oficial da Rocketseat  
 > 🔗 [Referência: Banco de dados e Injeção de Dependência – C#](https://app.rocketseat.com.br/classroom/banco-de-dados-e-injecao-de-dependencia)
 
@@ -7,14 +9,20 @@
 
 ## 📚 Índice
 
-1. [Visão Geral](#visão-geral)  
-2. [Instalação](#instalação)  
-3. [Como Executar o Projeto](#como-executar-o-projeto)  
-4. [Configuração](#configuração)  
-5. [Contribuições](#contribuições)  
-6. [Licença](#licença)  
-7. [Contato](#contato)  
-8. [Entre em Contato](#entre-em-contato)
+- [🚀 JourneyNetDI – Injeção de Dependência com C# e .NET](#-journeynetdi--injeção-de-dependência-com-c-e-net)
+  - [📚 Índice](#-índice)
+  - [🔎 Visão Geral](#-visão-geral)
+  - [⚙️ Instalação](#️-instalação)
+    - [🔵 Windows](#-windows)
+      - [.NET Framework](#net-framework)
+      - [.NET Core / .NET 5+](#net-core--net-5)
+    - [🍏 macOS](#-macos)
+    - [🐧 Linux](#-linux)
+  - [▶️ Como Executar o Projeto](#️-como-executar-o-projeto)
+  - [⚙️ Configuração](#️-configuração)
+  - [🤝 Contribuições](#-contribuições)
+  - [📜 Licença](#-licença)
+  - [📬 Entre em Contato](#-entre-em-contato)
 
 ---
 
