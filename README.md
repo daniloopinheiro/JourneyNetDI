@@ -1,111 +1,112 @@
-# Injeção de dependências
+# 🧩 Injeção de Dependências em C# com .NET
 
-*[Referencia](https://app.rocketseat.com.br/classroom/banco-de-dados-e-injecao-de-dependencia): 
-C# - Desenvolva aplicações completas e escaláveis com C# e .NET Core.
-NÍVEL 5 - Projeto: API de finanças - Banco de dados e Injeção de dependência*
+> Projeto baseado na trilha oficial da Rocketseat  
+> 🔗 [Referência: Banco de dados e Injeção de Dependência – C#](https://app.rocketseat.com.br/classroom/banco-de-dados-e-injecao-de-dependencia)
 
-## Índice
+---
 
-1. [Visão Geral](#visão-geral)
-2. [Instalação](#instalação)
-3. [Como Usar](#Como-executar-o-projeto)
-4. [Configuração](#configuração)
-5. [Contribuições](#contribuições)
-6. [Licença](#licença)
-7. [Contato](#contato)
+## 📚 Índice
 
-## Visão Geral
+1. [Visão Geral](#visão-geral)  
+2. [Instalação](#instalação)  
+3. [Como Executar o Projeto](#como-executar-o-projeto)  
+4. [Configuração](#configuração)  
+5. [Contribuições](#contribuições)  
+6. [Licença](#licença)  
+7. [Contato](#contato)  
+8. [Entre em Contato](#entre-em-contato)
 
-Explorando as opções *Transient, Scoped e Singleton*. Como evitar dependências fortes entre classes, utilizando injeção de dependência para manter o código modular e limpo. Importância de separar a criação de instâncias de classes, evitando acoplamentos desnecessários. Exploraremos a utilização de um serviço de injeção de dependência como um oráculo para gerenciar as dependências entre classes.
+---
 
-## Instalação
+## 🔎 Visão Geral
 
-### Windows
+Este projeto explora os conceitos fundamentais de **injeção de dependência** em C#, abordando os ciclos de vida:
+
+- `Transient`  
+- `Scoped`  
+- `Singleton`
+
+Você aprenderá a evitar acoplamentos desnecessários, mantendo o código modular e testável, utilizando um contêiner de injeção de dependência para gerenciar instâncias e serviços no .NET.
+
+---
+
+## ⚙️ Instalação
+
+### 🔵 Windows
 
 #### .NET Framework
+1. Acesse *Painel de Controle > Programas > Programas e Recursos* e verifique a versão instalada.  
+2. Caso necessário, baixe pelo [site oficial da Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet-framework).
 
-1. **Verificar a versão do Windows:**
-   - Abra o "Painel de Controle" e vá para "Programas" > "Programas e Recursos". Lá você pode ver se o .NET Framework já está instalado e qual versão.
+#### .NET Core / .NET 5+
+1. Acesse: [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)  
+2. Baixe e instale a versão desejada.
 
-2. **Instalação:**
-   - Para instalar o .NET Framework, baixe o instalador adequado para a versão do Windows no site da Microsoft (geralmente pode ser encontrado como um componente opcional no Windows Update).
+### 🍏 macOS
 
-#### .NET Core / .NET 5.0 e posteriores
+1. Acesse [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)  
+2. Baixe o `.pkg` e siga as instruções do instalador.
 
-1. **Baixar o instalador:**
-   - Acesse o site [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) e baixe o instalador do .NET Core ou .NET 5.0 (ou versão posterior).
+### 🐧 Linux
 
-2. **Executar o instalador:**
-   - Execute o arquivo baixado e siga as instruções na tela para completar a instalação.
+1. Siga as instruções específicas da sua distribuição em [docs.microsoft.com/linux](https://docs.microsoft.com/dotnet/core/install/linux).  
+   Exemplo para Ubuntu:
 
-### macOS
+```bash
+   sudo apt update
+   sudo apt install dotnet-sdk-5.0
+```
 
-#### .NET Core / .NET 5.0 e posteriores
+2. Verifique:
 
-1. **Baixar o instalador:**
-   - Acesse o site [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) e baixe o instalador do .NET Core ou .NET 5.0 (ou versão posterior) para macOS.
+```bash
+dotnet --version
+```
 
-2. **Executar o instalador:**
-   - Abra o arquivo baixado (.pkg) e siga as instruções na tela para completar a instalação.
+---
 
-### Linux
+## ▶️ Como Executar o Projeto
 
-#### .NET Core / .NET 5.0 e posteriores
+Abra o projeto no **Visual Studio** e selecione o modo de execução (API ou aplicação principal):
 
-1. **Adicionar o repositório do .NET:**
-   - Siga as instruções específicas para sua distribuição Linux no site da Microsoft [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
+> Certifique-se de marcar a opção correta ao executar:
 
-2. **Instalar o .NET:**
-   - Use os comandos apropriados para sua distribuição Linux para instalar o .NET Core ou .NET 5.0 e posteriores. Por exemplo, para Ubuntu:
-     ```bash
-     sudo apt-get update
-     sudo apt-get install dotnet-sdk-5.0
-     ```
+![Configuração de execução](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/226e1912-bc53-4a7e-bb65-1f30dc937502)
+![Modos de execução](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/299c559f-569a-464a-96fb-f14880e6e49c)
+![Selecionar projeto padrão](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/5ecbc3b0-e9af-4f3c-a64a-51d1c57b0cce)
 
-3. **Verificar a instalação:**
-   - Após a instalação, você pode verificar se o .NET foi instalado corretamente usando o comando:
-     ```bash
-     dotnet --version
-     ```
+---
 
-### Observações gerais
+## ⚙️ Configuração
 
-- **Atualizações:** É recomendável manter o .NET atualizado para receber correções de segurança e novos recursos.
-- **Documentação:** Para instruções detalhadas e específicas para diferentes versões e cenários, consulte a documentação oficial da Microsoft em [docs.microsoft.com/dotnet](https://docs.microsoft.com/dotnet).
+O projeto não exige configurações adicionais.
+Apenas certifique-se de que possui o SDK .NET compatível instalado (`dotnet --version`).
 
-Seguindo esses passos, você conseguirá instalar o .NET em diferentes sistemas operacionais de forma adequada.
+---
 
-## Como executar o projeto
+## 🤝 Contribuições
 
-- Utilizando VS, selecione em qual modo pretende executar o projeto:
+Sua contribuição é muito bem-vinda! Aqui vão algumas formas de ajudar:
 
-![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/226e1912-bc53-4a7e-bb65-1f30dc937502)
-![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/299c559f-569a-464a-96fb-f14880e6e49c)
+* 📌 **Reportar Problemas**: Abra uma issue explicando o problema encontrado.
+* 💡 **Sugerir Melhorias**: Tem ideias? Crie uma issue com sua sugestão.
+* 💻 **Pull Requests**: Fork, implemente sua melhoria e envie um PR.
+* 📝 **Documentação**: Sugestões ou melhorias na documentação são super bem-vindas.
+* 📣 **Compartilhar**: Divulgue este projeto com outros devs.
 
-- Obsesrvação que ficará de sua escolha; deixe uma das duas opções selecionada.
+---
 
-![image](https://github.com/daniloopinheiro/journey-csharp-injecao-de-dependencias/assets/64677271/5ecbc3b0-e9af-4f3c-a64a-51d1c57b0cce)
+## 📜 Licença
 
-## Configuração
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-Conforme o projeto está, não há nenhuma necessidade de configurar; apenas verificar a versão do sdk em sua maquina que esteja instalado.
+---
 
-## Contribuições
+## 📬 Entre em Contato
 
-1. **Testar e Reportar Problemas**: Se encontrar algum problema ou bug, por favor, abra uma nova issue descrevendo-o detalhadamente.
+Para **colaboração, dúvidas ou consultoria**, entre em contato:
 
-2. **Sugerir Melhorias**: Se tiver ideias para melhorar o projeto, sinta-se à vontade para abrir uma issue propondo suas sugestões.
-
-3. **Enviar Pull Requests**: Se você é desenvolvedor e gostaria de contribuir com código, ficarei muito feliz em receber suas contribuições. Basta fazer um fork do repositório, implementar suas mudanças e enviar um pull request.
-
-4. **Ajudar com Documentação**: Contribuições para a documentação também são muito bem-vindas! Se você encontrar partes da documentação que podem ser melhoradas ou novos recursos que precisam de documentação, fique à vontade para contribuir.
-
-5. **Espalhar a Palavra**: Compartilhar este projeto com outras pessoas que possam se interessar ou se beneficiar dele também é uma grande forma de contribuição.
-
-## Contato
-
-https://github.com/daniloopinheiro
-
-## Licença
-
-Indique a licença sob a qual o seu projeto está disponível. Por exemplo, MIT, GPL, Apache, etc.
+* ✉️ **Pessoal**: [daniloopro@gmail.com](mailto:daniloopro@gmail.com)
+* 🏢 **DevsFree**: [devsfree@devsfree.com.br](mailto:devsfree@devsfree.com.br)
+* 📊 **dopme.io**: [contato@dopme.io](mailto:contato@dopme.io)
+* 💼 **LinkedIn**: [Danilo O. Pinheiro](https://www.linkedin.com/in/daniloopinheiro)
