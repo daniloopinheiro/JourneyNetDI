@@ -1,4 +1,5 @@
 using DependencyInjection.API.Endpoints.Scoped;
+using DependencyInjection.API.Endpoints.Singleton;
 using DependencyInjection.API.Endpoints.Transient;
 
 var builder = WebApplication.CreateBuilder(args);
